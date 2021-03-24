@@ -1,0 +1,41 @@
+.container{
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 1200px;
+  min-width: 320px;
+  text-align: center;
+}
+.title{
+  margin: 15px;
+}
+.card-list{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px;
+  &__btn{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: 30px;
+    background-color: #fff;
+    border: 1px solid #888;
+    color: #888;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+    &_active{
+      font-weight: bold;
+      background-color: #aaa;
+      border: 1px solid #000;
+      color: #000;
+    }
+  }
+}

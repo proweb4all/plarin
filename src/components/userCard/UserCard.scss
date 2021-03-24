@@ -1,0 +1,53 @@
+.user-card{
+  position: relative;
+  margin: 2%;
+  max-width: 400px;
+  width: 28%;
+  height: 0;
+  padding-bottom: 28%;
+  border: 1px solid #666;
+  background: #aaa no-repeat center /cover;
+  list-style-type: none;
+  cursor: pointer;
+  transition: .2s;
+  &:hover{
+    -webkit-box-shadow: 0px 6px 10px 4px rgba(34, 60, 80, 0.3);
+    -moz-box-shadow: 0px 6px 10px 4px rgba(34, 60, 80, 0.3);
+    box-shadow: 0px 6px 10px 4px rgba(34, 60, 80, 0.3);
+  }
+  &__name{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    color: #fff;
+    background-color: rgba(0,0,0,.7);
+  }
+  &_add{
+    position: relative;
+    & span{
+      position: absolute;
+      top: 50%;   
+      left: 50%;
+      transform: translate(-50%, -60%);
+      line-height: 1;
+      color: #333;
+      font-size: 150px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .user-card{
+    width: 45%;    
+    padding-bottom: 45%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .user-card{
+    width: 100%;    
+    padding-bottom: 100%;
+  }
+}
